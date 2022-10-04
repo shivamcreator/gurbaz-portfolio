@@ -1,4 +1,4 @@
-﻿﻿*, ::before, ::after {
+﻿*, ::before, ::after {
     box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
@@ -50,7 +50,28 @@ body {
     cursor: pointer;
 }
 
+.error {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#offo-container{
+    height:50vh;
+   
+}
+#offo img {
+    height: 250px;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+.error-footer{
+    padding:25px ;
+    text-align:center;
+}
 .refresh-page {
     display: none;
     height: 100vh;
@@ -313,6 +334,9 @@ html.network-issue .refresh-page {
 
 .skillset-a, .skillset-b, .skillset-c {
     width: 35%;
+}
+.skill-icon{
+    height:200px;
 }
 
 .skillset-a {
