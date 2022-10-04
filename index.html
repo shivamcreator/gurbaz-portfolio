@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -26,14 +26,26 @@
     <link rel="apple-touch-icon" type="" href="" />
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <script type="text/javascript">
-        function networkError() {
-            /*document.getElementsByTagName("html").item(0).classList.add("network-issue");*/
-        }
+        
+        
     </script>
-    <link rel=stylesheet href="./index.css" onerror="networkError()" />
+    <style>
+        #error {
+            display: none;
+        }
+        @media only screen and (max-width: 1300px){
+            #content {
+                display: none;
+            }
+            #error {
+                display: block;
+            }
+        }
+    </style>
+    <link rel=stylesheet href="./index.css"  />
 </head>
 <body>
-    <div class="content">
+    <div id="content" class="content">
         <div class="page-header box" data-nosnippet="">
             <div class="header" id="header">
                 <div class="logo cursor-pointer">
@@ -242,35 +254,35 @@
                 <div class="section-right-skillset">
                     <div class="skillset-a">
                         <div>
-                            <img src="./images/figma.svg" />
+                            <img class="skill-icon" src="./images/figma.svg" />
                             <div class="skillset-caption">Figma</div>
                         </div>
                         <div>
-                            <img src="./images/xd.svg" />
+                            <img class="skill-icon" src="./images/xd.svg" />
                             <div class="skillset-caption">Adobe xd</div>
 
                         </div>
                     </div>
                     <div class="skillset-b">
                         <div>
-                            <img src="./images/Sketch.svg" />
+                            <img class="skill-icon" src="./images/Sketch.svg" />
                             <div class="skillset-caption">Sketch</div>
 
                         </div>
                         <div>
-                            <img src="./images/ae.svg" />
+                            <img class="skill-icon" src="./images/ae.svg" />
                             <div class="skillset-caption">After Effects</div>
 
                         </div>
                     </div>
                     <div class="skillset-c">
                         <div>
-                            <img src="./images/Photoshop.svg" />
+                            <img class="skill-icon" src="./images/Photoshop.svg" />
                             <div class="skillset-caption">Photoshop</div>
 
                         </div>
                         <div>
-                            <img src="./images/ai.svg" />
+                            <img class="skill-icon" src="./images/ai.svg" />
                             <div class="skillset-caption">Adobe Illustrator</div>
 
                         </div>
@@ -410,7 +422,19 @@
             </div>
         </div>
 
+    </div>
+    <div id="error" class="error">
+        <div id="offo-container">
+            <div id="offo" class="img">
+                <img src="E:/Projects/External/Projects/GURBAZ-PORT/images/error.svg" />
+            </div>
+            <div class="error-footer">            We only support desktop browser<br /> coming soon in mobiles as well.</div>
 
+            <div class="error-footer">
+                <b>Please open in laptop/desktop </b>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
